@@ -67,10 +67,10 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - uses: docker/build-push-action@v6
+     - uses: docker/build-push-action@v6
         with:
           context: .
           push: true
           tags: |
-            mj464-bit/assignment-user-calculation-routes-integration-testing:latest
-            mj464-bit/assignment-user-calculation-routes-integration-testing:${{ github.sha }}
+           mj464/assignment-user-calculation-routes-integration-testing:latest
+            mj464/assignment-user-calculation-routes-integration-testing:${{ github.sha }}
